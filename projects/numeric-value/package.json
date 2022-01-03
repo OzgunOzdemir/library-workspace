@@ -1,6 +1,6 @@
 {
   "name": "numeric-value",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Numeric value directive for Angular projects",
   "peerDependencies": {
     "@angular/common": "^12.0.5",
