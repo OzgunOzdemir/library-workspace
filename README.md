@@ -1,27 +1,46 @@
-# LibraryWorkspace
+## Numeric Value
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+Numeric Value Directive for Angular Projects
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+npm i numeric-value
+```
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Import `NumericValueModule` in `AppModule`
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-## Build
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NumericValueModule } from 'numeric-value';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NumericValueModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-## Running unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After that you can use numeric value  `numericValue` directive in template
 
-## Running end-to-end tests
+```html
+<div class="container">
+  <input type="text" placeholder="Numeric value directive does not use" />
+  <input type="text" placeholder="Numeric value directive is using" numericValue />
+</div>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
