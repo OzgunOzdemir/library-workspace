@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { NumericValueModule } from 'numeric-value';
+
 
 @NgModule({
   declarations: [
@@ -12,6 +14,7 @@ import { NumericValueModule } from 'numeric-value';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NumericValueModule,
   ],
   providers: [],
