@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "b338978f-4977-487c-a63e-56ee4149c398"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "numeric-value": {
+      "projectType": "library",
+      "root": "projects/numeric-value",
+      "sourceRoot": "projects/numeric-value/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/numeric-value/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/numeric-value/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/numeric-value/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/numeric-value/src/test.ts",
+            "tsConfig": "projects/numeric-value/tsconfig.spec.json",
+            "karmaConfig": "projects/numeric-value/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "numeric-value"
+}

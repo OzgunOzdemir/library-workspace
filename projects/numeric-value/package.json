@@ -1,0 +1,32 @@
+{
+  "name": "numeric-value",
+  "version": "0.0.2",
+  "description": "Numeric value directive for Angular projects",
+  "peerDependencies": {
+    "@angular/common": "^12.0.5",
+    "@angular/core": "^12.0.5"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OzgunOzdemir/library-workspace"
+  },
+  "keywords": [
+    "numeric",
+    "value",
+    "numeric value",
+    "numeric-value",
+    "angular",
+    "frontend",
+    "front end",
+    "front-end",
+    "ngx"
+  ],
+  "author": "Özgün Özdemir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OzgunOzdemir/library-workspace/issues"
+  }
+}
