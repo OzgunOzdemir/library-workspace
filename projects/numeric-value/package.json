@@ -1,6 +1,6 @@
 {
-  "name": "numeric-value",
-  "version": "0.0.3",
+  "name": "@ozgunozdemir/numeric-value",
+  "version": "0.0.6",
   "description": "Numeric value directive for Angular projects",
   "peerDependencies": {
     "@angular/common": "^12.0.5",
@@ -29,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/OzgunOzdemir/library-workspace/issues"
   },
-  "homepage": "https://github.com/OzgunOzdemir/library-workspace/blob/main/README.md"
+  "homepage": "https://github.com/OzgunOzdemir/library-workspace/blob/main/projects/numeric-value/README.md"
 }

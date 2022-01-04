@@ -5,12 +5,13 @@ Numeric Value Directive for Angular Projects
 ## Installation
 
 ```
-npm i numeric-value
+npm i @ozgunozdemir/numeric-value
 ```
 
 ## Usage
 
 Import `NumericValueModule` in `AppModule`
+
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -38,6 +39,8 @@ export class AppModule { }
 
 ```
 
+After that you can create `formData` in `AppComponent`
+
 ```typescript
 import { Component } from '@angular/core';
 
@@ -55,7 +58,7 @@ export class AppComponent {
 
 ```
 
-After that you can use numeric value  `numericValue` directive in template
+After that you can use numeric value  `ngxNumericValue` directive in template
 
 ```html
 <div class="container">
@@ -74,7 +77,7 @@ After that you can use numeric value  `numericValue` directive in template
     name="fSecondNumber"
     #secondNumber="ngModel"
     autocomplete="off"
-    numericValue
+    ngxNumericValue
   />
 </div>
 
