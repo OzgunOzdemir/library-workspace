@@ -2,7 +2,7 @@ import { Directive, HostListener } from '@angular/core';
 import { NgControl } from '@angular/forms';
 
 @Directive({
-  selector: 'input[numericValue]',
+  selector: 'input[ngxNumericValue]',
 })
 export class NumericValueDirective {
   constructor(private el: NgControl) {}
